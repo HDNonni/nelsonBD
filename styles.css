@@ -9,13 +9,16 @@
     width: 100%;
 } */
 
+body{
+    padding-bottom:30px;
+}
 h1{
     text-align: center;
     font-size: 4rem;
     font-family: 'Kaushan Script', cursive;
     background: rgb(240, 143, 52);
-    background: linear-gradient(308deg, rgba(227, 163, 59, 0.754) 10%, rgba(236,125,13,0.5438550420168067) 100%);
-    
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:black;  
 }
 .main{
     background: rgb(240, 143, 52);
@@ -30,7 +33,7 @@ h1{
 }
 .surprise{
     padding-bottom: .25rem;
-    color:gray;
+    color:purple;
 }
 .info{
     padding-bottom:1em;
@@ -41,12 +44,11 @@ h1{
 }
 p{
     padding-top:1em;
-    padding-left:1.5em;
+    padding-left:100px;
     font-weight: bold;
     font-size:1.25em;
 }
 .bottomInfo{
-    padding-left:50%;
     background: rgb(240, 143, 52);
 }
 .flex-container{
@@ -54,11 +56,9 @@ p{
     padding:0; 
    justify-content: center;
 }
-.flex-item{
-    flex-direction: column;
-}
 .spider{
-   margin-left:75px; 
+   margin-left:55px;
+   margin-right:20px; 
 }
 .image{
     margin-left:75px;
@@ -70,6 +70,29 @@ p{
     border-radius:5px;
     margin-right:50px;
     margin-top:50px;
+}
+.bottomTextBkgrd{
+    background-color: rgba(246, 190, 36, 0.89);
+    position: relative;
+}
+.bottomImage{
+    position: absolute;
+    z-index:0;
+    opacity: 0.2;
+    top:40px;
+    left:30px;
+}
+.topPadding{
+    padding-top:7em;
+}
+.bottomPadding{
+    padding-bottom:18em;
+}
+.cauldron{
+   position: absolute;
+   right:150px;
+   bottom:400px;
+   
 }
 
 @media(max-width :800px){
@@ -88,6 +111,9 @@ p{
     .info{
         padding-bottom: .25rem;
     }
+    p{
+        padding-left:20px;
+    }
     .flex-container{
         display: flex;
         padding:0; 
@@ -105,16 +131,22 @@ p{
         width: 100%;
         max-height: 40vh;
         min-width: 0;
-        
     }
+   
     .surprise{
         padding-bottom: .55rem;
-        color:rgb(180, 169, 169);
+        color:purple;
     }
     div{
         height:50%
     }
     .mobile{
         display: none;
+    }
+    .topPadding{
+        padding-top:1em;
+    }
+    .bottomPadding{
+        padding-bottom: 1em;
     }
 }
