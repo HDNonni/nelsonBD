@@ -42,10 +42,19 @@ h1{
     font-family: 'Kaushan Script', cursive;
     font-size:2em;
 }
+
 p{
     padding-top:1em;
     padding-left:100px;
     font-weight: bold;
+    font-size:1.25em;
+}
+.map a{
+    padding-bottom:40px;
+    font-size:35px;
+}
+span{
+    text-decoration: underline;
     font-size:1.25em;
 }
 .bottomInfo{
@@ -71,6 +80,11 @@ p{
     margin-right:50px;
     margin-top:50px;
 }
+.spider-background {
+    background-image:url(spider-light.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+}
 .bottomTextBkgrd{
     background-color: rgba(246, 190, 36, 0.89);
     position: relative;
@@ -91,7 +105,7 @@ p{
 .cauldron{
    position: absolute;
    right:150px;
-   bottom:400px;
+   bottom:420px;
    
 }
 
